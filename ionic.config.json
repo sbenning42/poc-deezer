@@ -1,0 +1,7 @@
+{
+  "name": "pocDeezer",
+  "integrations": {
+    "cordova": {}
+  },
+  "type": "ionic-angular"
+}
