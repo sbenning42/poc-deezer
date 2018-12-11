@@ -7,8 +7,12 @@
 </ion-header>
 
 <ion-content padding>
-  The world is your oyster.
-  <p>
-    If you get lost, the <a href="http://ionicframework.com/docs/v2">docs</a> will be your guide.
-  </p>
+  <button ion-button color="primary" (click)="oAuthAndFetchDeezerArtists()">DEEZER</button>
+
+  <ion-item-group>
+    <ion-item-divider color="light">NAMES</ion-item-divider>
+    <ion-item *ngFor="let artist of deezerArtists"><span>{{ artist.name }}</span></ion-item>
+  </ion-item-group>
+
 </ion-content>
+
